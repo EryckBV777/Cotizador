@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUESTIONARY</title>
+    <link rel="stylesheet" href="styleqcuesty.css">
+
+</head>
+
+<body>
+
+    <article>
+        <h2>
+            <ul>
+                <li><a href="index.html" class="menu">MENU</a>
+                    <a href="#pie" class="contacto">CONTACTO</a></li>
+            </ul>
+        </h2>
+    </article>
+
+    <header>
+        <h1>CUESTIONARY</h1>
+        <p>Complete the questionnaire according to your knowledge</p>
+    </header>
+
+    <div class="contenedor">
+        <video autoplay muted loop class="mivideo2">
+        <source src="fondo2.mp4" type="Video/mp4">
+    </video>
+    </div>
+
+    <div class="fondito">
+        <main class="grid">
+            <div class="container">
+                <section id="p1">
+                    <h3>1.- Can I park here?</h3>
+                    <label>
+                <input class="radio-input" type="radio" name="group1" value="0" onclick="repuesta(1,this)">Sorry, I did that.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group1" value="0" onclick="repuesta(1,this)">It's the same place.
+            </label>
+                    <label class="">
+                <input class="radio-input" type="radio" name="group1" value="1" onclick="repuesta(1,this)">Only for half an hour.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group1" value="0" onclick="repuesta(1,this)">Only while I'm not here.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group1" value="0" onclick="repuesta(1,this)">You can't do it without permission.
+            </label>
+                </section>
+                <br>
+
+                <section id="p2">
+                    <h3>2.- What colour will you paint the children's bedroom?</h3>
+                    <label>
+                <input class="radio-input" type="radio" name="group2" value="0" onclick="repuesta(2,this)">I hope it was right.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group2" value="1" onclick="repuesta(2,this)">We can't decide.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group2" value="0" onclick="repuesta(2,this)">It wasn't very difficult.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group2" value="0" onclick="repuesta(2,this)">Depending on the infants.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group2" value="0" onclick="repuesta(2,this)">I can't choose clearly.
+            </label>
+                </section>
+                <br>
+
+                <section id="p3">
+                    <h3>3.- I can't understand this email?</h3>
+                    <label>
+                <input class="radio-input" type="radio" name="group3" value="1" onclick="repuesta(3,this)">Would you like some help?.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group3" value="0" onclick="repuesta(3,this)">Don't you know?.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group3" value="0" onclick="repuesta(3,this)">I suppose you can.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group3" value="0" onclick="repuesta(3,this)">Change language.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group3" value="0" onclick="repuesta(3,this)">Read it again to understand it.
+            </label>
+                </section>
+                <br>
+
+                <section id="p4">
+                    <h3>4.- I'd like two tickets for tomorrow night?</h3>
+                    <label>
+                <input class="radio-input" type="radio" name="group4" value="0" onclick="repuesta(4,this)">How much did you pay?.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group4" value="0" onclick="repuesta(4,this)">Afternoon and evening.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group4" value="1" onclick="repuesta(4,this)">I'll just check for you.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group4" value="0" onclick="repuesta(4,this)">I have no money.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group4" value="0" onclick="repuesta(4,this)">I'm sorry, I'm not the person you should talk to.
+            </label>
+                </section>
+                <br>
+
+                <section id="p5">
+                    <h3>5.- Hall we go to the gym now?</h3>
+                    <label>
+                <input class="radio-input" type="radio" name="group5" value="1" onclick="repuesta(5,this)">I'm too tired.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group5" value="0" onclick="repuesta(5,this)">It's very good.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group5" value="0" onclick="repuesta(5,this)">Not at all.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group5" value="0" onclick="repuesta(5,this)">No, because I don't have time.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group5" value="0" onclick="repuesta(5,this)">Not, today it's raining.
+            </label>
+                </section>
+                <br>
+                <section id="p6">
+                    <h3>6.- His eyes were ...... bad that he couldn't read the number plate of the car in front?</h3>
+                    <label>
+                <input class="radio-input" type="radio" name="group6" value="0" onclick="repuesta(6,this)">Such.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group6" value="0" onclick="repuesta(6,this)">Too.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group6" value="1" onclick="repuesta(6,this)">So.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group6" value="0" onclick="repuesta(6,this)">Very.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group6" value="0" onclick="repuesta(6,this)">'Cause I need glasses.
+            </label>
+                </section>
+                <br>
+
+                <section id="p7">
+                    <h3>7.- The company needs to decide ...... and for all what its position is on this point?</h3>
+                    <label>
+                <input class="radio-input" type="radio" name="group7" value="0" onclick="repuesta(7,this)">Here.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group7" value="1" onclick="repuesta(7,this)">Once.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group7" value="0" onclick="repuesta(7,this)">First.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group7" value="0" onclick="repuesta(7,this)">Finally.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group7" value="0" onclick="repuesta(7,this)">Thirsty.
+            </label>
+                </section>
+                <br>
+
+                <section id="p8">
+                    <h3>8.- Don't put your cup on the ...... of the table, someone will knock it off?</h3>
+                    <label>
+                <input class="radio-input" type="radio" name="group8" value="0" onclick="repuesta(8,this)">Outside.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group8" value="1" onclick="repuesta(8,this)">Edge.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group8" value="0" onclick="repuesta(8,this)">Boundary.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group8" value="0" onclick="repuesta(8,this)">Border.
+            </label>
+                    <label>
+                <input class="radio-input" type="radio" name="group8" value="0" onclick="repuesta(8,this)">The toilet.
+            </label>
+                </section>
+                <br>
+
+                <section id="p9">
+                    <h3>9.- I'm sorry - I didn't ...... to disturb you?</h3>
+                    <label>
+                <input type="radio" name="group9" value="0" onclick="repuesta(9,this)" class="radio-input"  >Hope.
+            </label>
+                    <label>
+                <input type="radio" name="group9" value="0" onclick="repuesta(9,this)" class="radio-input">Think.
+            </label>
+                    <label>
+                <input type="radio" name="group9" value="1" onclick="repuesta(9,this)" class="radio-input">Mean.
+            </label>
+                    <label>
+                <input type="radio" name="group9" value="0" onclick="repuesta(9,this)" class="radio-input">Suppose.
+            </label>
+                    <label>
+                <input type="radio" name="group9" value="0" onclick="repuesta(9,this)" class="radio-input">I want.
+            </label>
+                </section>
+                <br>
+
+                <section id="p10">
+                    <h3>10.- The singer ended the concert ...... her most popular song?</h3>
+                    <label>
+                <input type="radio" name="group10" value="0" onclick="repuesta(10,this)" class="radio-input">By.
+            </label>
+                    <label>
+                <input type="radio" name="group10" value="1" onclick="repuesta(10,this)" class="radio-input">With.
+            </label>
+                    <label>
+                <input type="radio" name="group10" value="0" onclick="repuesta(10,this)" class="radio-input">In.
+            </label>
+                    <label>
+                <input type="radio" name="group10" value="0" onclick="repuesta(10,this)" class="radio-input">As.
+            </label>
+                    <label>
+                <input type="radio" name="group10" value="0" onclick="repuesta(10,this)" class="radio-input">For.
+            </label>
+                </section>
+        </main>
+        </div>
+        <div>
+            <button onclick="document.location.reload();">REFRESH</button>
+            <br>
+            <button onclick="verifyAnswers()">VERIFY</button>
+            <br>
+            <br>
+            <h5 id="aciertos">Conseguiste... Aciertos</h5>
+        </div>
+        <script src="./script.js"></script>
+
+        <footer id="pie">
+            <h4>
+                Copyright &copy; Borgonio Vidal Eric - 1322134150
+            </h4>
+        </footer>
+
+</body>
+
+</html>
